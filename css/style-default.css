@@ -4,9 +4,8 @@
 
     --color-background: #8FA6CB;
     --color-font: #ffffff;
-    --color-background-body: #8AA399;
-    --color-background-main: #8fa6cb81;
-    --color: #28502E;
+    --color-background-body: #F8F4E3;
+    --color-background-main: #8fa6cb;
 }
 
 * {
@@ -18,6 +17,9 @@
 body {
     background-color: var(--color-background-body);
     color: var(--color-font);
+    display: flex;
+    flex-direction: column;
+    align-content: center;
 }
 
 .main {
