@@ -88,11 +88,6 @@ a {
         pointer-events: none;
     }
 
-    .nav-list a {
-        font-size: 24px;
-        opacity: 0;
-    }
-
     .nav-list li:nth-child(1) a {
         transition: 0.5s 0.2s;
     }
@@ -131,4 +126,8 @@ a {
         transform: rotate(-135deg);
         top: -7px;
     }
+}
+
+.hidden {
+    display: none;
 }
