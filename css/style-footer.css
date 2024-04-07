@@ -1,0 +1,20 @@
+:root {
+
+    --color-background: #8FA6CB;
+    --color-font: #ffffff;
+    --color-background-body: #8AA399;
+    --color-background-main: #8fa6cb81;
+    --color: #28502E;
+}
+
+footer {
+    background-color: var(--color-background);
+    display: flex;
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
