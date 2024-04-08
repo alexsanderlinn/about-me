@@ -45,6 +45,7 @@ body {
     flex-direction: column;
     justify-content: space-around;    
     width: 80vh;
+    text-align: justify;
 }
 
 .container-2-homepage p{
