@@ -1,0 +1,16 @@
+.container-2-homepage p{
+    padding: 2%;
+}
+
+.container-2-homepage img{
+    padding: 5%;
+}
+
+.container-1-homepage, 
+.container-2-homepage {
+
+    display: grid;
+    flex-direction: column;
+    width: 80vh;
+    justify-items: center;
+}
