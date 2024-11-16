@@ -8,6 +8,10 @@ a {
     text-decoration: none;
 }
 
+i {
+  color: #ffffff;  
+}
+
 .header {
     background: var(--color-background);
     padding-inline: 16px;
@@ -23,7 +27,7 @@ a {
     align-items: center;
 }
 
-.logo {
+.logo i {
     font-size: 40px;
     color: var(--color-font);
 }

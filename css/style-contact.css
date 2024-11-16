@@ -1,0 +1,51 @@
+:root {
+    --color-background: #8FA6CB;
+    --color-font: #ffffff;
+    --color-background-body: #F8F4E3;
+    --color-background-main: #8fa6cb;
+    --color-font-hover: #427fe1;
+}
+
+.social-network{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 5px;
+    padding-top: 15px;
+}
+
+.social-network a {
+    color: var(--color-font);
+}
+
+.social-network a:hover {
+    color: var(--color-font-hover);
+}
+
+.container-2 a {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.mail {
+    color: var(--color-font);
+    margin-left: 7%;
+}
+
+.mail:hover {
+    color: var(--color-font-hover);
+}
+
+.container-2 h2 {
+    margin: 1px;
+    padding: 0px;
+}
+
+.virtual-mail {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 5px;
+}
