@@ -1,0 +1,168 @@
+/* Importação de fontes (mover para o topo) */
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
+/* Definição de variáveis */
+:root {
+    --color-background: #000d2e;
+    --color-font: #ffffff;
+    --color-font-hover: #808080;
+    --color-pointer: rgba(128, 0, 128, 0.278);
+    --color-selection: #ffffff;
+    --color-selection-font: #1d4fd87d;
+    --color-minimun-pulse: #8000801a;
+    --color-maximum-pulse: #80008080;
+    --fa-style-font: "Lexend Deca", sans-serif;
+}
+
+/* Estilos base */
+body {
+    background-color: var(--color-background);
+    color: var(--color-font);
+    font-family: var(--fa-style-font);
+    margin: 0;
+    padding: 0;
+}
+
+/* Logo */
+.logo {
+    text-align: center;
+    font-size: 2em;
+    position: fixed;
+    width: 100%;
+    background-color: var(--color-background);
+    z-index: 9999;
+    animation: pulsar 4s ease-in-out infinite;
+    color: var(--color-font);
+    padding: 15px;
+}
+
+/* Seleção de texto */
+::selection {
+    background-color: var(--color-selection);
+    color: var(--color-maximum-pulse);
+}
+
+/* Estilo da fonte */
+.lexend-deca- {
+    font-family: var(--fa-style-font);
+    font-weight: 100;
+    font-style: normal;
+}
+
+/* Layout */
+.main {
+    padding: 15%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    z-index: 1;
+}
+
+.section-1-div {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 50vh;
+    padding: 10%;
+    z-index: 10;
+}
+
+.section-2-div {
+    margin-left: 25%;
+    padding: 5%;
+    margin-top: -1vh;
+}
+
+/* Tipografia */
+.information h1 {
+    font-size: 2.6em;
+}
+
+.information h4 {
+    font-size: 1.2em;
+}
+
+.text-primary-title {
+    text-align: center;
+    font-size: 2em;
+}
+
+.text-title {
+    font-size: 2em;
+}
+
+.about {
+    text-align: justify;
+}
+
+.social-network a {
+    font-size: 2.5em;
+    padding: 1.1%;
+}
+
+/* Gradiente dinâmico */
+.dynamic-gradient {
+    pointer-events: none;
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    transition: background 0.1s ease-out;
+}
+
+/* Estilo do menu de navegação */
+#section-list li a {
+    padding: 5px;
+    text-decoration: none;
+    color: var(--color-font);
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#section-list li a.active {
+    color: var(--color-maximum-pulse);
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+#section-list li a:hover {
+    color: var(--color-font-hover);
+}
+
+#section-list ul li {
+    margin: 10px;
+    padding: 10px;
+}
+
+/* Configuração de scroll suave */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Estilos para as seções */
+section {
+    padding: 40px 20px;
+    min-height: 70vh;
+}
+
+/* Estilos da lista de seções */
+.section-list {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.section-list ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
