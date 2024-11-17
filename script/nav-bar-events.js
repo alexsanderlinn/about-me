@@ -19,8 +19,22 @@ const observer = new IntersectionObserver((entries) => {
             setActiveLink(entry.target.id);
         }
     });
-}, { threshold: 0.5 }); // Detecta quando 50% da seção é visível
+}, { 
+    threshold: 0.5, // Detecta quando 50% da seção é visível
+    rootMargin: '-50px 0px 0px 0px' // Ajusta o offset (exemplo: 50px para um cabeçalho fixo)
+});
 
 sections.forEach(section => {
     observer.observe(section);
+});
+
+document.querySelectorAll('.navbar a').forEach(link => {
+    link.addEventListener('click', (event) => {
+        event.preventDefault();
+        const targetId = link.getAttribute('href').substring(1);
+        document.getElementById(targetId).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start' // Ou 'center' para centralizar
+        });
+    });
 });

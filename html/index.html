@@ -3,67 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Alexsander Linn - Portfolio</title>
+
+    <!-- Favicon -->
     <link rel="shortcut icon" href="../image/favicon/favicon.ico" type="image/x-icon">
+    
+    <!-- CSS Files -->
     <link rel="stylesheet" href="../css/default-style.css">
     <link rel="stylesheet" href="../css/logo-style.css">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/da005dbdf0.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <!-- Logo Section -->
     <div class="logo">
-        <i class="fa-solid fa-earth-americas"></i>
+        <div class="logo-icon">
+            <i class="fa-solid fa-earth-americas" id="principal-logo"></i>
+            <button id="translate-button"><i class="fa-solid fa-language" id="translate-button" onclick=""></i> teste</button>
+        </div>
     </div>
+
+    <!-- Main Content -->
     <div class="main">
+        <!-- Section 1: Header and Navigation -->
         <div class="section-1-div">
+            <!-- Personal Information -->
             <div class="information">
-                <h1>Alexsander Linn</h1>
-                <h4>Front End Developer</h4>
-                <h4>Analyst of Technology information</h4>
+                <h1 id="name">Alexsander Linn</h1>
+                <h4 id="job-title">Front End Developer</h4>
+                <h4 id="job-role">Analyst of Technology Information</h4>
             </div>
+
+            <!-- Navigation Bar -->
             <div class="navbar">
-                <br><br>
                 <ul id="section-list">
-                    <li><a href="#section-1">Home</a></li>
-                    <li><a href="#section-2">About me</a></li>
-                    <li><a href="#section-3">Projects</a></li>
-                </ul>   
-                <br><br>             
+                    <li><a href="#section-1" id="home-link">Home</a></li>
+                    <li><a href="#section-2" id="about-link">About Me</a></li>
+                    <li><a href="#section-3" id="projects-link">Projects</a></li>
+                </ul>
             </div>
+
+            <!-- Social Network Links -->
             <div class="social-network">
-                <a href=""><i class="fa-brands fa-instagram"></i></a>
-                <a href="mailto:"><i class="fa-regular fa-envelope"></i></a>
-                <a href=""><i class="fa-brands fa-github"></i></a>
-                <a href=""><i class="fa-brands fa-discord"></i></a>
-                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" id="instagram-link"><i class="fa-brands fa-instagram"></i></a>
+                <a href="mailto:" id="email-link"><i class="fa-regular fa-envelope"></i></a>
+                <a href="#" id="github-link"><i class="fa-brands fa-github"></i></a>
+                <a href="#" id="discord-link"><i class="fa-brands fa-discord"></i></a>
+                <a href="#" id="linkedin-link"><i class="fa-brands fa-linkedin"></i></a>
             </div>
-        </div>        
+        </div>
+
+        <!-- Section 2: About Me -->
         <div class="section-2-div">
-            <section class="site-title"class="section-1" id="section-1" >
-                <h2 class="text-primary-title">Bem-vindo ao meu pequeno espaço na internet!</h2>
+            <!-- Welcome Section -->
+            <section id="section-1" class="site-title section-1">
+                <h2 class="text-primary-title" id="welcome-title">Bem-vindo ao meu pequeno espaço na internet!</h2>
             </section>
-            <section class="about" class="section-2" id="section-2" >
-                <h2 class="text-title">Quem sou eu:</h2>
-                <p class="text">Sou um entusiasta da tecnologia, apaixonado por aprender. Atuo como analista da tecnologia da informação em uma empresa do agro negócio, há três anos e estou constantemente buscando novas maneiras de aprimorar minhas habilidades e me manter atualizado com as últimas tendências do setor.</p>
+
+            <!-- About Me Details -->
+            <section id="section-2" class="section-2">
+                <h2 class="text-title" id="about-title">Quem sou eu:</h2>
+                <p class="text" id="about-text">
+                    Sou um entusiasta da tecnologia, apaixonado por aprender. Atuo como analista da tecnologia da informação 
+                    em uma empresa do agronegócio há três anos e estou constantemente buscando novas maneiras de aprimorar minhas 
+                    habilidades e me manter atualizado com as últimas tendências do setor.
+                </p>
                 <br>
-                <h2 class="text-title">O que faço:</h2>
-                <p class="text">Meu trabalho principal é auxiliar usuários e fazer a gerencia de todas filiais da empresa, prestando suporte com rede, configurações e manutenções. Além disso, tenho interesse em áreas como desenvolvimento de front-end e ciência de dados.</p>
+                <h2 class="text-title" id="what-i-do-title">O que faço:</h2>
+                <p class="text" id="what-i-do-text">
+                    Meu trabalho principal é auxiliar usuários e fazer a gerência de todas as filiais da empresa, prestando suporte 
+                    com rede, configurações e manutenções. Além disso, tenho interesse em áreas como desenvolvimento de front-end e 
+                    ciência de dados.
+                </p>
                 <br>
-                <h2 class="text-title">Por que estou aqui:</h2>
-                <p class="text">Este site é meu espaço para compartilhar minhas experiências, projetos e pensamentos sobre tecnologia. Espero que você encontre algo útil aqui e que possamos trocar ideias interessantes.</p>
+                <h2 class="text-title" id="why-i-am-here-title">Por que estou aqui:</h2>
+                <p class="text" id="why-i-am-here-text">
+                    Este site é meu espaço para compartilhar minhas experiências, projetos e pensamentos sobre tecnologia. Espero que 
+                    você encontre algo útil aqui e que possamos trocar ideias interessantes.
+                </p>
                 <br>
-                <h2 class="text-title">Onde me encontrar:</h2>
-                <p class="text">Além deste site, você também pode me encontrar nas redes sociais. Não hesite em me contatar se tiver alguma dúvida, sugestão ou apenas quiser bater um papo!</p>
+                <h2 class="text-title" id="where-to-find-me-title">Onde me encontrar:</h2>
+                <p class="text" id="where-to-find-me-text">
+                    Além deste site, você também pode me encontrar nas redes sociais. Não hesite em me contatar se tiver alguma dúvida, 
+                    sugestão ou apenas quiser bater um papo!
+                </p>
             </section>
-            <section class="some-sites" class="section-3" id="section-3">
-                <h1>teste</h1>
+
+            <!-- Projects Section -->
+            <section id="section-3" class="section-3">
+                <div class="projetos">
+                    <h1 id="projects-title">Alguns projetos</h1>
+                    <br>
+                    <div class="weather-report">
+                        <img src="../image/weather-site.png" alt="Weather Report" id="weather-image">
+                        <a href="https://alexsanderlinn.github.io/Weather-Report/html/index.html" target="_blank" id="weather-link">
+                            <i class="fa-solid fa-code"></i> Acesse o site aqui
+                        </a>
+                    </div>
+                </div>
             </section>
         </div>
     </div>
+
+    <!-- Dynamic Gradient -->
     <div id="gradient" class="dynamic-gradient">
-        <!--pointer-dynamic-->
+        <!-- Pointer Dynamic -->
     </div>
+
+    <!-- Scripts -->
     <script src="../script/pointer-events-none.js"></script>
     <script src="../script/nav-bar-events.js"></script>
+    <script src="../script/translate-button.js"></script>
 </body>
 </html>

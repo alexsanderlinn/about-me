@@ -36,6 +36,16 @@ body {
     padding: 15px;
 }
 
+.logo-icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#principal-logo {
+    margin-left: 50%;
+}
+
 /* Seleção de texto */
 ::selection {
     background-color: var(--color-selection);
@@ -71,7 +81,7 @@ body {
 .section-2-div {
     margin-left: 25%;
     padding: 5%;
-    margin-top: -1vh;
+    margin-top: 10vh;
 }
 
 /* Tipografia */
@@ -92,7 +102,7 @@ body {
     font-size: 2em;
 }
 
-.about {
+.section-2 {
     text-align: justify;
 }
 
@@ -100,6 +110,7 @@ body {
     font-size: 2.5em;
     padding: 1.1%;
 }
+
 
 /* Gradiente dinâmico */
 .dynamic-gradient {
@@ -115,7 +126,6 @@ body {
     padding: 5px;
     text-decoration: none;
     color: var(--color-font);
-    font-weight: bold;
     font-size: 1.5em;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -123,7 +133,6 @@ body {
 
 #section-list li a.active {
     color: var(--color-maximum-pulse);
-    font-weight: bold;
     border-radius: 10px;
 }
 
@@ -139,12 +148,6 @@ body {
 /* Configuração de scroll suave */
 html {
     scroll-behavior: smooth;
-}
-
-/* Estilos para as seções */
-section {
-    padding: 40px 20px;
-    min-height: 70vh;
 }
 
 /* Estilos da lista de seções */
@@ -165,4 +168,22 @@ section {
     display: flex;
     list-style: none;
     gap: 30px;
+}
+
+.projetos h1 {
+    font-size: 2em;
+}
+
+.weather-report {
+    font-size: 1.3em;
+}
+
+.weather-report {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.weather-report a:hover {
+    color: var(--color-font-hover);
 }

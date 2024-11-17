@@ -1,0 +1,60 @@
+// Traduções
+const translations = {
+    en: {
+        welcomeTitle: "Welcome to my little corner of the internet!",
+        aboutTitle: "Who am I:",
+        aboutText: "I am a technology enthusiast, passionate about learning. I work as an IT analyst at an agribusiness company for three years, and I am constantly looking for new ways to improve my skills and stay updated with the latest industry trends.",
+        whatIDoTitle: "What I do:",
+        whatIDoText: "My main job is to assist users and manage all the company's branches, providing support with networks, configurations, and maintenance. Additionally, I am interested in areas such as front-end development and data science.",
+        whyIAmHereTitle: "Why I am here:",
+        whyIAmHereText: "This website is my space to share my experiences, projects, and thoughts about technology. I hope you find something useful here, and that we can exchange interesting ideas.",
+        whereToFindMeTitle: "Where to find me:",
+        whereToFindMeText: "Besides this website, you can also find me on social media. Feel free to contact me if you have any questions, suggestions, or just want to chat!",
+        projectsTitle: "Some projects",
+        weatherLink: "Visit the site here"
+    },
+    pt: {
+        welcomeTitle: "Bem-vindo ao meu pequeno espaço na internet!",
+        aboutTitle: "Quem sou eu:",
+        aboutText: "Sou um entusiasta da tecnologia, apaixonado por aprender. Atuo como analista da tecnologia da informação em uma empresa do agronegócio há três anos e estou constantemente buscando novas maneiras de aprimorar minhas habilidades e me manter atualizado com as últimas tendências do setor.",
+        whatIDoTitle: "O que faço:",
+        whatIDoText: "Meu trabalho principal é auxiliar usuários e fazer a gerência de todas as filiais da empresa, prestando suporte com rede, configurações e manutenções. Além disso, tenho interesse em áreas como desenvolvimento de front-end e ciência de dados.",
+        whyIAmHereTitle: "Por que estou aqui:",
+        whyIAmHereText: "Este site é meu espaço para compartilhar minhas experiências, projetos e pensamentos sobre tecnologia. Espero que você encontre algo útil aqui e que possamos trocar ideias interessantes.",
+        whereToFindMeTitle: "Onde me encontrar:",
+        whereToFindMeText: "Além deste site, você também pode me encontrar nas redes sociais. Não hesite em me contatar se tiver alguma dúvida, sugestão ou apenas quiser bater um papo!",
+        projectsTitle: "Alguns projetos",
+        weatherLink: "Acesse o site aqui"
+    }
+};
+
+// Estado inicial
+let currentLang = "pt"; // Idioma padrão
+
+// Função para alternar idiomas
+function toggleLanguage() {
+    currentLang = currentLang === "pt" ? "en" : "pt"; // Alterna entre "pt" e "en"
+
+    // Atualiza o conteúdo do site com base na tradução
+    document.getElementById("welcome-title").textContent = translations[currentLang].welcomeTitle;
+    document.getElementById("about-title").textContent = translations[currentLang].aboutTitle;
+    document.getElementById("about-text").textContent = translations[currentLang].aboutText;
+    document.getElementById("what-i-do-title").textContent = translations[currentLang].whatIDoTitle;
+    document.getElementById("what-i-do-text").textContent = translations[currentLang].whatIDoText;
+    document.getElementById("why-i-am-here-title").textContent = translations[currentLang].whyIAmHereTitle;
+    document.getElementById("why-i-am-here-text").textContent = translations[currentLang].whyIAmHereText;
+    document.getElementById("where-to-find-me-title").textContent = translations[currentLang].whereToFindMeTitle;
+    document.getElementById("where-to-find-me-text").textContent = translations[currentLang].whereToFindMeText;
+    document.getElementById("projects-title").textContent = translations[currentLang].projectsTitle;
+    document.getElementById("weather-link").textContent = translations[currentLang].weatherLink;
+}
+
+// Verifique se a DOM está carregada e então adicione o evento de clique
+document.addEventListener("DOMContentLoaded", function() {
+    const translateButton = document.getElementsByTagName("translate-button");
+
+    // Adicionar o evento de clique ao botão de tradução
+    if (translateButton) {
+        translateButton.addEventListener("click", toggleLanguage);
+    }
+});
